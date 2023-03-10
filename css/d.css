@@ -1,0 +1,175 @@
+#menu_wrap{
+    position:relative;
+    display: none;
+}
+
+#menu_wrap .top_menu{
+    height: 50px;
+    line-height: 50px;
+    padding: 0 50px;
+    background:#004282;
+    border-bottom: solid 1px #fff;
+    font-size:14px;
+    font-weight:700;
+    position:absolute;
+    display: none;
+    
+}
+
+#menu_wrap .top_menu>a{
+    color:#fff;
+}
+
+
+
+#sub_menu{
+    display:none;
+}
+
+.in_sub{
+    width: 100%;
+    height: auto;
+    float: left;
+}
+
+#sub_menu>li{
+    width: 100%;
+    height: auto;
+    line-height: 20px;
+    float: left;
+    margin-top: 10px;
+}
+
+.model>a{
+    font-size: 13px;
+    font-weight: 700;
+    border-bottom: 1px solid darkgray;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+#login{
+    width: auto;
+    height: 100%;
+    /* background-color: blue; */
+    float: right;
+    text-align: center;
+    line-height: 80px;
+    font-size: 11px;
+    font-weight: 700;
+    margin-right: 20px;
+    display: none;
+}
+
+#login>li{
+    width: auto;
+    height: 100%;
+    float: left;
+}
+
+#login>li:after{
+    content: 'ㅣ'
+}
+
+#login>li:last-child:after{
+    display: none;
+}
+
+
+
+.m_btn{
+    width:40px;
+    height:40px;
+    padding: 5px;
+    position:absolute;
+    top:20px;
+    right: 20px;
+    border:none;
+    cursor: pointer;
+    background:transparent;
+}
+
+.ham{
+    width:30px;
+    height:3px;
+    position:absolute;
+    left:5px;
+    top:18.5px;
+    background:#222;
+}
+
+.ham .top_line{
+    width:30px;
+    height:3px;
+    position:absolute;
+    left:0px;
+    bottom:-12px;
+    background:#222;
+    transition: transform .3s;
+}
+
+.ham .bot_line{
+    width:30px;
+    height:3px;
+    position:absolute;
+    left:0;
+    top:-12px;
+    background:#222;
+    transition: transform .3s;
+}
+
+/* m_btn 클릭했을 때 */
+.ham.on{
+    width:0;
+}
+
+.ham.on .bot_line{
+    transform: translateY(13px) rotate(135deg);
+}
+
+.ham.on .top_line{
+    transform: translateY(-11px) rotate(-135deg);
+}
+
+/* sub_btn */
+
+.sub_btn{
+    width: 50px;
+    height:50px;
+    background:transparent;
+    position:absolute;
+    top:0;
+    right:25px;
+    border: none;
+    cursor:pointer;
+}
+
+.sub_btn .x_line {
+    width: 15px;
+    height: 3px;
+    background:#ffffff;
+    position:absolute;
+    top:23.5px;
+    left:17.5px;
+    transition: transform .4s;
+}
+
+.sub_btn .y_line {
+    width: 3px;
+    height: 15px;
+    background:#ffffff;
+    position:absolute;
+    top:17.5px;
+    left:23.5px;
+    transition: transform .4s;
+}
+
+/* sub_btn 클릭했을 때 */
+
+.sub_btn.on .x_line{
+    transform: rotate(360deg);
+}
+
+.sub_btn.on .y_line{
+    transform: rotate(450deg);
+}
